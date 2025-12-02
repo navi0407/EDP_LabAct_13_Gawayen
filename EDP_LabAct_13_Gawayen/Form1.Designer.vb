@@ -33,64 +33,76 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
+        Me.btnRead = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnLoad = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnConnect = New System.Windows.Forms.Button()
+        Me.txtHiddenID = New System.Windows.Forms.TextBox()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(157, 25)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Label1.Location = New System.Drawing.Point(187, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(377, 32)
+        Me.Label1.Size = New System.Drawing.Size(300, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Employee Records System"
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(126, 87)
+        Me.txtId.Location = New System.Drawing.Point(96, 86)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(250, 22)
+        Me.txtId.Size = New System.Drawing.Size(208, 20)
         Me.txtId.TabIndex = 1
         '
         'txtSalary
         '
-        Me.txtSalary.Location = New System.Drawing.Point(126, 224)
+        Me.txtSalary.Location = New System.Drawing.Point(96, 197)
+        Me.txtSalary.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSalary.Name = "txtSalary"
-        Me.txtSalary.Size = New System.Drawing.Size(250, 22)
+        Me.txtSalary.Size = New System.Drawing.Size(208, 20)
         Me.txtSalary.TabIndex = 2
         '
         'txtPosition
         '
-        Me.txtPosition.Location = New System.Drawing.Point(126, 176)
+        Me.txtPosition.Location = New System.Drawing.Point(96, 158)
+        Me.txtPosition.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPosition.Name = "txtPosition"
-        Me.txtPosition.Size = New System.Drawing.Size(250, 22)
+        Me.txtPosition.Size = New System.Drawing.Size(208, 20)
         Me.txtPosition.TabIndex = 3
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(126, 131)
+        Me.txtName.Location = New System.Drawing.Point(96, 121)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(250, 22)
+        Me.txtName.Size = New System.Drawing.Size(208, 20)
         Me.txtName.TabIndex = 4
         '
         'txtDepartment
         '
-        Me.txtDepartment.Location = New System.Drawing.Point(126, 267)
+        Me.txtDepartment.Location = New System.Drawing.Point(96, 232)
+        Me.txtDepartment.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDepartment.Name = "txtDepartment"
-        Me.txtDepartment.Size = New System.Drawing.Size(250, 22)
+        Me.txtDepartment.Size = New System.Drawing.Size(208, 20)
         Me.txtDepartment.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(99, 87)
+        Me.Label2.Location = New System.Drawing.Point(67, 86)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(31, 20)
+        Me.Label2.Size = New System.Drawing.Size(25, 17)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "ID:"
         '
@@ -98,9 +110,10 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(28, 269)
+        Me.Label3.Location = New System.Drawing.Point(6, 232)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 20)
+        Me.Label3.Size = New System.Drawing.Size(86, 17)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Department:"
         '
@@ -108,9 +121,10 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(72, 133)
+        Me.Label4.Location = New System.Drawing.Point(41, 121)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 20)
+        Me.Label4.Size = New System.Drawing.Size(49, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Name:"
         '
@@ -118,9 +132,10 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(69, 224)
+        Me.Label5.Location = New System.Drawing.Point(38, 197)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 20)
+        Me.Label5.Size = New System.Drawing.Size(52, 17)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Salary:"
         '
@@ -128,58 +143,94 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(56, 176)
+        Me.Label6.Location = New System.Drawing.Point(28, 158)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(74, 20)
+        Me.Label6.Size = New System.Drawing.Size(62, 17)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Position:"
         '
-        'btnAdd
+        'btnCreate
         '
-        Me.btnAdd.Location = New System.Drawing.Point(148, 315)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(86, 45)
-        Me.btnAdd.TabIndex = 9
-        Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnCreate.Location = New System.Drawing.Point(113, 271)
+        Me.btnCreate.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(84, 37)
+        Me.btnCreate.TabIndex = 9
+        Me.btnCreate.Text = "Create"
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
-        'btnEdit
+        'btnRead
         '
-        Me.btnEdit.Location = New System.Drawing.Point(276, 315)
-        Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(86, 45)
-        Me.btnEdit.TabIndex = 10
-        Me.btnEdit.Text = "Edit"
-        Me.btnEdit.UseVisualStyleBackColor = True
+        Me.btnRead.Location = New System.Drawing.Point(209, 271)
+        Me.btnRead.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRead.Name = "btnRead"
+        Me.btnRead.Size = New System.Drawing.Size(84, 37)
+        Me.btnRead.TabIndex = 10
+        Me.btnRead.Text = "Read"
+        Me.btnRead.UseVisualStyleBackColor = True
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(113, 321)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(84, 37)
+        Me.btnUpdate.TabIndex = 11
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(148, 376)
+        Me.btnDelete.Location = New System.Drawing.Point(209, 321)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(86, 45)
-        Me.btnDelete.TabIndex = 11
+        Me.btnDelete.Size = New System.Drawing.Size(84, 37)
+        Me.btnDelete.TabIndex = 12
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'btnLoad
+        'DataGridView1
         '
-        Me.btnLoad.Location = New System.Drawing.Point(276, 376)
-        Me.btnLoad.Name = "btnLoad"
-        Me.btnLoad.Size = New System.Drawing.Size(86, 45)
-        Me.btnLoad.TabIndex = 12
-        Me.btnLoad.Text = "Load"
-        Me.btnLoad.UseVisualStyleBackColor = True
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(319, 86)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(320, 373)
+        Me.DataGridView1.TabIndex = 13
+        '
+        'btnConnect
+        '
+        Me.btnConnect.Location = New System.Drawing.Point(25, 293)
+        Me.btnConnect.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.Size = New System.Drawing.Size(84, 37)
+        Me.btnConnect.TabIndex = 14
+        Me.btnConnect.Text = "Connect MySQL"
+        Me.btnConnect.UseVisualStyleBackColor = True
+        '
+        'txtHiddenID
+        '
+        Me.txtHiddenID.Location = New System.Drawing.Point(96, 53)
+        Me.txtHiddenID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtHiddenID.Name = "txtHiddenID"
+        Me.txtHiddenID.Size = New System.Drawing.Size(208, 20)
+        Me.txtHiddenID.TabIndex = 15
+        Me.txtHiddenID.Visible = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(703, 450)
-        Me.Controls.Add(Me.btnLoad)
+        Me.ClientSize = New System.Drawing.Size(654, 481)
+        Me.Controls.Add(Me.txtHiddenID)
+        Me.Controls.Add(Me.btnConnect)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.btnEdit)
-        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.btnRead)
+        Me.Controls.Add(Me.btnCreate)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -191,8 +242,11 @@ Partial Class Form1
         Me.Controls.Add(Me.txtSalary)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,8 +263,11 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents btnAdd As Button
-    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnCreate As Button
+    Friend WithEvents btnRead As Button
+    Friend WithEvents btnUpdate As Button
     Friend WithEvents btnDelete As Button
-    Friend WithEvents btnLoad As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnConnect As Button
+    Friend WithEvents txtHiddenID As TextBox
 End Class
