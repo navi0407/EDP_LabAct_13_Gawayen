@@ -1,5 +1,4 @@
-﻿
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 Imports System.Data
 Imports System.Data.SqlClient
 
@@ -7,13 +6,9 @@ Public Class Form1
     Dim conn As MySqlConnection
     Dim COMMAND As MySqlCommand
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnConnect_Click(sender As Object, e As EventArgs) Handles btnConnect.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=localhost; userid=root; password=root; employee_records_system;"
+        conn.ConnectionString = "server=localhost; userid=root; password=root; database=employee_db;"
         Try
             conn.Open()
             MessageBox.Show("Connected")
@@ -24,9 +19,9 @@ Public Class Form1
     End Sub
 
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
-        Dim query As String = "INSERT INTO employee_list (name, position, salary, department) VALUES (@name, @position, @salary, @department)"
+        Dim query As String = "INSERT INTO employees (name, position, salary, department) VALUES (@name, @position, @salary, @department)"
         Try
-            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_records_system;")
+            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_db")
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@name", txtName.Text)
@@ -43,9 +38,9 @@ Public Class Form1
     End Sub
 
     Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click
-        Dim query As String = "SELECT * FROM employee_records_system.employee_list; WHERE is_deleted=0;"
+        Dim query As String = "SELECT * FROM employee_db.employees WHERE is_deleted=0;"
         Try
-            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_records_system;")
+            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_db;")
                 Dim adapter As New MySqlDataAdapter(query, conn)
                 Dim table As New DataTable()
                 adapter.Fill(table)
@@ -59,11 +54,12 @@ Public Class Form1
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        Dim query As String = "UPDATE `employee_records_system`.`employee_list` SET `name` = @name,  `position` = @position, `salary` = @salary `department` = @department  WHERE (`id` = @id)"
+        Dim query As String = "UPDATE `employee_db`.`employees` SET `id` = @id, `name` = @name,  `position` = @position, `salary` = @salary `department` = @department  WHERE (`id` = @id)"
         Try
-            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_records_system;")
+            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_db;")
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@id", CInt(txtId.Text))
                     cmd.Parameters.AddWithValue("@name", txtName.Text)
                     cmd.Parameters.AddWithValue("@position", txtPosition.Text)
                     cmd.Parameters.AddWithValue("@salary", CInt(txtSalary.Text))
@@ -78,14 +74,15 @@ Public Class Form1
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        Dim query As String = "UPDATE `employee_records_system`.`employee_list` SET `is_deleted` = 1, WHERE (`id` = @id)"
+        Dim query As String = "UPDATE `employee_db`.`employees` SET `is_deleted` = 1, WHERE (`id` = @id)"
         Try
-            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_records_system;")
+            Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=employee_db;")
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", CInt(txtHiddenID.Text))
                     cmd.ExecuteNonQuery()
                     MessageBox.Show("Record deleted successfully!")
+                    txtId.Clear()
                     txtName.Clear()
                     txtPosition.Clear()
                     txtSalary.Clear()
@@ -101,10 +98,11 @@ Public Class Form1
         If e.RowIndex >= 0 Then
             Dim selectedRow As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
             txtName.Text = selectedRow.Cells("name").Value.ToString()
-            txtPosition.Text = selectedRow.Cells("postion").Value.ToString()
+            txtPosition.Text = selectedRow.Cells("position").Value.ToString()
             txtSalary.Text = selectedRow.Cells("salary").Value.ToString()
             txtDepartment.Text = selectedRow.Cells("department").Value.ToString()
             txtHiddenID.Text = selectedRow.Cells("id").Value.ToString()
         End If
     End Sub
+
 End Class
