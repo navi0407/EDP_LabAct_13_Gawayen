@@ -48,61 +48,59 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Label1.Location = New System.Drawing.Point(187, 9)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(249, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(300, 26)
+        Me.Label1.Size = New System.Drawing.Size(377, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Employee Records System"
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(96, 86)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtId.Location = New System.Drawing.Point(128, 106)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(208, 20)
+        Me.txtId.Size = New System.Drawing.Size(276, 22)
         Me.txtId.TabIndex = 1
         '
         'txtSalary
         '
-        Me.txtSalary.Location = New System.Drawing.Point(96, 197)
-        Me.txtSalary.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSalary.Location = New System.Drawing.Point(128, 242)
+        Me.txtSalary.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtSalary.Name = "txtSalary"
-        Me.txtSalary.Size = New System.Drawing.Size(208, 20)
+        Me.txtSalary.Size = New System.Drawing.Size(276, 22)
         Me.txtSalary.TabIndex = 2
         '
         'txtPosition
         '
-        Me.txtPosition.Location = New System.Drawing.Point(96, 158)
-        Me.txtPosition.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPosition.Location = New System.Drawing.Point(128, 194)
+        Me.txtPosition.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPosition.Name = "txtPosition"
-        Me.txtPosition.Size = New System.Drawing.Size(208, 20)
+        Me.txtPosition.Size = New System.Drawing.Size(276, 22)
         Me.txtPosition.TabIndex = 3
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(96, 121)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtName.Location = New System.Drawing.Point(128, 149)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(208, 20)
+        Me.txtName.Size = New System.Drawing.Size(276, 22)
         Me.txtName.TabIndex = 4
         '
         'txtDepartment
         '
-        Me.txtDepartment.Location = New System.Drawing.Point(96, 232)
-        Me.txtDepartment.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDepartment.Location = New System.Drawing.Point(128, 286)
+        Me.txtDepartment.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtDepartment.Name = "txtDepartment"
-        Me.txtDepartment.Size = New System.Drawing.Size(208, 20)
+        Me.txtDepartment.Size = New System.Drawing.Size(276, 22)
         Me.txtDepartment.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(67, 86)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(89, 106)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(25, 17)
+        Me.Label2.Size = New System.Drawing.Size(31, 20)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "ID:"
         '
@@ -110,10 +108,9 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 232)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(8, 286)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 17)
+        Me.Label3.Size = New System.Drawing.Size(102, 20)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Department:"
         '
@@ -121,10 +118,9 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(41, 121)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(55, 149)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 17)
+        Me.Label4.Size = New System.Drawing.Size(58, 20)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Name:"
         '
@@ -132,10 +128,9 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(38, 197)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(51, 242)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 17)
+        Me.Label5.Size = New System.Drawing.Size(61, 20)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Salary:"
         '
@@ -143,87 +138,110 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(28, 158)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(37, 194)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 17)
+        Me.Label6.Size = New System.Drawing.Size(74, 20)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Position:"
         '
         'btnCreate
         '
-        Me.btnCreate.Location = New System.Drawing.Point(113, 271)
-        Me.btnCreate.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCreate.BackColor = System.Drawing.Color.Maroon
+        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCreate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCreate.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCreate.Location = New System.Drawing.Point(138, 333)
+        Me.btnCreate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(84, 37)
+        Me.btnCreate.Size = New System.Drawing.Size(112, 46)
         Me.btnCreate.TabIndex = 9
         Me.btnCreate.Text = "Create"
-        Me.btnCreate.UseVisualStyleBackColor = True
+        Me.btnCreate.UseVisualStyleBackColor = False
         '
         'btnRead
         '
-        Me.btnRead.Location = New System.Drawing.Point(209, 271)
-        Me.btnRead.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRead.BackColor = System.Drawing.Color.Maroon
+        Me.btnRead.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnRead.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRead.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnRead.Location = New System.Drawing.Point(280, 333)
+        Me.btnRead.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRead.Name = "btnRead"
-        Me.btnRead.Size = New System.Drawing.Size(84, 37)
+        Me.btnRead.Size = New System.Drawing.Size(112, 46)
         Me.btnRead.TabIndex = 10
         Me.btnRead.Text = "Read"
-        Me.btnRead.UseVisualStyleBackColor = True
+        Me.btnRead.UseVisualStyleBackColor = False
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(113, 321)
-        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUpdate.BackColor = System.Drawing.Color.Maroon
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnUpdate.Location = New System.Drawing.Point(138, 394)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(84, 37)
+        Me.btnUpdate.Size = New System.Drawing.Size(112, 46)
         Me.btnUpdate.TabIndex = 11
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(209, 321)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnDelete.BackColor = System.Drawing.Color.Maroon
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnDelete.Location = New System.Drawing.Point(280, 394)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(84, 37)
+        Me.btnDelete.Size = New System.Drawing.Size(112, 46)
         Me.btnDelete.TabIndex = 12
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(322, 86)
+        Me.DataGridView1.Location = New System.Drawing.Point(432, 65)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(320, 373)
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.Size = New System.Drawing.Size(427, 459)
         Me.DataGridView1.TabIndex = 13
         '
         'btnConnect
         '
-        Me.btnConnect.Location = New System.Drawing.Point(25, 293)
-        Me.btnConnect.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnConnect.BackColor = System.Drawing.Color.Maroon
+        Me.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConnect.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnConnect.Location = New System.Drawing.Point(211, 458)
+        Me.btnConnect.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnConnect.Name = "btnConnect"
-        Me.btnConnect.Size = New System.Drawing.Size(84, 37)
+        Me.btnConnect.Size = New System.Drawing.Size(124, 51)
         Me.btnConnect.TabIndex = 14
         Me.btnConnect.Text = "Connect MySQL"
-        Me.btnConnect.UseVisualStyleBackColor = True
+        Me.btnConnect.UseVisualStyleBackColor = False
         '
         'txtHiddenID
         '
-        Me.txtHiddenID.Location = New System.Drawing.Point(96, 53)
-        Me.txtHiddenID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtHiddenID.Location = New System.Drawing.Point(128, 65)
+        Me.txtHiddenID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHiddenID.Name = "txtHiddenID"
-        Me.txtHiddenID.Size = New System.Drawing.Size(208, 20)
+        Me.txtHiddenID.Size = New System.Drawing.Size(276, 22)
         Me.txtHiddenID.TabIndex = 15
         Me.txtHiddenID.Visible = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(654, 481)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ClientSize = New System.Drawing.Size(872, 592)
         Me.Controls.Add(Me.txtHiddenID)
         Me.Controls.Add(Me.btnConnect)
         Me.Controls.Add(Me.DataGridView1)
@@ -242,7 +260,8 @@ Partial Class Form1
         Me.Controls.Add(Me.txtSalary)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
